@@ -124,12 +124,12 @@ GEMINI_SES_YONERGE = (
     "anlatim yap. Sadece metni oku, baska hicbir sey soyleme:"
 )
 
-SES_ARASI_BEKLEME = float(os.getenv("SES_ARASI_BEKLEME", "6"))
+SES_ARASI_BEKLEME = float(os.getenv("SES_ARASI_BEKLEME", "12"))
 
 # Gemini hiz limitine takilirsa: uzun uzun beklemek yerine hemen edge-tts'e
 # dusmek daha mantikli. Beklemek istersen True yap.
-GEMINI_HIZ_LIMITINDE_BEKLE = False
-GEMINI_HIZ_LIMIT_BEKLEMESI = 20
+GEMINI_HIZ_LIMITINDE_BEKLE = True
+GEMINI_HIZ_LIMIT_BEKLEMESI = 12
 
 # edge-tts yedegi icin
 SES_TONLARI = {

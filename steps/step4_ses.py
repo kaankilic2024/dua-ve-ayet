@@ -87,7 +87,7 @@ def _uret(metin: str, hedef: Path) -> str:
         if _video_motoru == "gemini":
             # Video Gemini ile basladi ama devami gelmedi. Tutarlilik icin
             # bastan edge-tts ile uretmek gerekir; cagiran kod bunu yapar.
-            raise SesHatasi(f"Gemini yarida kesildi ({bilgi})")
+            raise SesHatasi(f"Gemini surekli basarisiz ({bilgi})")
 
         logger.uyari(f"  Gemini kullanilamiyor ({bilgi}). edge-tts'e geciliyor.")
 
@@ -151,7 +151,7 @@ def seslendir(proje_dir: Path, veri: Dict[str, Any]) -> List[Path]:
     try:
         return _seslendir(proje_dir, veri)
     except SesHatasi as e:
-        if "yarida kesildi" not in str(e):
+        if "surekli basarisiz" not in str(e):
             raise
         logger.uyari(f"{e}")
         logger.bilgi("Ses tutarliligi icin tum ayetler edge-tts ile yenileniyor.")
