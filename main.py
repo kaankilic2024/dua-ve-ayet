@@ -36,7 +36,7 @@ def tek_video(yukle: bool = False) -> Path:
 
     # --- ADIM 1: ayetleri getir
     logger.adim("ADIM 1/5  Ayetler getiriliyor")
-    ayetler = ayet_kaynak.sonraki_ayetler(config.AYET_MIN, config.AYET_MAX)
+    ayetler = ayet_kaynak.sonraki_ayetler()
     etiket = ayet_kaynak.konum_etiketi(ayetler)
 
     logger.ok(f"{len(ayetler)} ayet: {etiket}")

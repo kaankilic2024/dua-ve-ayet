@@ -49,9 +49,17 @@ KANAL_ADI = "Dua Ve Ayet"
 ARAPCA_KAYNAK = "quran-uthmani"      # Osmanli hatli standart metin
 MEAL_KAYNAGI = "tr.diyanet"          # Diyanet Isleri Meali
 
-# Video basina kac ayet (konu butunlugune gore degisir)
-AYET_MIN = 1
-AYET_MAX = 3
+# Video uzunlugu kelime sayisina gore belirlenir.
+# Turkce seslendirme saniyede ~2 kelime: 50 kelime ~ 25-30 saniye.
+HEDEF_KELIME = 60
+
+# Son eklenen ayet hedefi bu kadar asabilir. Ayet ASLA yarim birakilmaz;
+# tolerans, hedefe cok yakinken bir sonraki ayeti de almayi saglar.
+KELIME_TOLERANSI = 30
+
+# Guvenlik siniri: cok kisa ayetlerde (Rahman suresi gibi) video
+# gereginden uzun olmasin.
+AYET_UST_SINIRI = 8
 
 # ---------------------------------------------------------------- VIDEO
 GENISLIK = 1080

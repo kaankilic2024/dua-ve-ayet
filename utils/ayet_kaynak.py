@@ -128,11 +128,15 @@ def ayet_getir(sure_no: int, ayet_no: int) -> Dict[str, str]:
 
 
 # ------------------------------------------------------------------ secim
-def sonraki_ayetler(adet_min: int = 1, adet_max: int = 3) -> List[Dict[str, str]]:
-    """Kaldigi yerden sonraki ayetleri getirir.
+def sonraki_ayetler() -> List[Dict[str, str]]:
+    """Kaldigi yerden, hedef kelime sayisina ulasana kadar ayet toplar.
 
-    Sure sonuna gelirse sonraki sureye gecer; ayetler sure siniri asmaz
-    (konu butunlugu bozulmasin diye).
+    Ayetler ASLA yarim birakilmaz: hedef asilsa bile son ayet tam alinir.
+    Sure siniri da asilmaz (konu butunlugu bozulmasin).
+
+    Ornek: hedef 50 kelime ise; 20 kelimelik ayetten sonra 25 kelimelik
+    ayet eklenir (toplam 45), sonra 30 kelimelik ayet de eklenir (75) --
+    cunku 45 hedefin altinda ve ayet bolunemez.
     """
     ilerleme = ilerleme_oku()
     sure_no, ayet_no = ilerleme["sure"], ilerleme["ayet"]
@@ -144,25 +148,47 @@ def sonraki_ayetler(adet_min: int = 1, adet_max: int = 3) -> List[Dict[str, str]
         sure_no, ayet_no = 1, 1
 
     sure = sureler[sure_no]
-    kalan = sure["ayet_sayisi"] - ayet_no + 1
 
-    if kalan <= 0:
-        # Bu sure bitti, sonrakine gec
-        sure_no += 1
+    # Sure bittiyse sonrakine gec
+    if ayet_no > sure["ayet_sayisi"]:
+        sure_no = sure_no + 1 if sure_no < 114 else 1
         ayet_no = 1
-        if sure_no > 114:
-            sure_no = 1
         sure = sureler[sure_no]
-        kalan = sure["ayet_sayisi"]
 
-    adet = min(adet_max, kalan)
-    adet = max(adet, min(adet_min, kalan))
+    hedef = config.HEDEF_KELIME
+    tolerans = config.KELIME_TOLERANSI
+    en_fazla_ayet = config.AYET_UST_SINIRI
 
-    ayetler = []
-    for i in range(adet):
-        ayetler.append(ayet_getir(sure_no, ayet_no + i))
+    ayetler, toplam_kelime = [], 0
+    sirada = ayet_no
+
+    while sirada <= sure["ayet_sayisi"] and len(ayetler) < en_fazla_ayet:
+        ayet = ayet_getir(sure_no, sirada)
+        kelime = len(ayet["turkce"].split())
+
+        # Elimizde ayet varsa ve hedefe ulastiysak dur
+        if ayetler and toplam_kelime >= hedef:
+            break
+
+        # Bu ayeti eklersek hedefi tolerans kadarindan fazla asar mi?
+        # Asiyorsa alma -- ama elimizde hic ayet yoksa mecburen al
+        # (ayet bolunemez).
+        if ayetler and toplam_kelime + kelime > hedef + tolerans:
+            break
+
+        ayetler.append(ayet)
+        toplam_kelime += kelime
+        sirada += 1
         time.sleep(0.4)          # API'yi yormayalim
 
+    if not ayetler:              # olmamali ama guvenlik
+        ayetler = [ayet_getir(sure_no, ayet_no)]
+        toplam_kelime = len(ayetler[0]["turkce"].split())
+
+    logger.bilgi(
+        f"{len(ayetler)} ayet secildi, {toplam_kelime} kelime "
+        f"(hedef {hedef})"
+    )
     return ayetler
 
 
