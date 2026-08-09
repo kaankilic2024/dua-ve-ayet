@@ -1,0 +1,686 @@
+[
+  {
+    "no": 1,
+    "ad": "سُورَةُ ٱلْفَاتِحَةِ",
+    "ad_tr": "Al-Faatiha",
+    "ayet_sayisi": 7
+  },
+  {
+    "no": 2,
+    "ad": "سُورَةُ البَقَرَةِ",
+    "ad_tr": "Al-Baqara",
+    "ayet_sayisi": 286
+  },
+  {
+    "no": 3,
+    "ad": "سُورَةُ آلِ عِمۡرَانَ",
+    "ad_tr": "Aal-i-Imraan",
+    "ayet_sayisi": 200
+  },
+  {
+    "no": 4,
+    "ad": "سُورَةُ النِّسَاءِ",
+    "ad_tr": "An-Nisaa",
+    "ayet_sayisi": 176
+  },
+  {
+    "no": 5,
+    "ad": "سُورَةُ المَائـِدَةِ",
+    "ad_tr": "Al-Maaida",
+    "ayet_sayisi": 120
+  },
+  {
+    "no": 6,
+    "ad": "سُورَةُ الأَنۡعَامِ",
+    "ad_tr": "Al-An'aam",
+    "ayet_sayisi": 165
+  },
+  {
+    "no": 7,
+    "ad": "سُورَةُ الأَعۡرَافِ",
+    "ad_tr": "Al-A'raaf",
+    "ayet_sayisi": 206
+  },
+  {
+    "no": 8,
+    "ad": "سُورَةُ الأَنفَالِ",
+    "ad_tr": "Al-Anfaal",
+    "ayet_sayisi": 75
+  },
+  {
+    "no": 9,
+    "ad": "سُورَةُ التَّوۡبَةِ",
+    "ad_tr": "At-Tawba",
+    "ayet_sayisi": 129
+  },
+  {
+    "no": 10,
+    "ad": "سُورَةُ يُونُسَ",
+    "ad_tr": "Yunus",
+    "ayet_sayisi": 109
+  },
+  {
+    "no": 11,
+    "ad": "سُورَةُ هُودٍ",
+    "ad_tr": "Hud",
+    "ayet_sayisi": 123
+  },
+  {
+    "no": 12,
+    "ad": "سُورَةُ يُوسُفَ",
+    "ad_tr": "Yusuf",
+    "ayet_sayisi": 111
+  },
+  {
+    "no": 13,
+    "ad": "سُورَةُ الرَّعۡدِ",
+    "ad_tr": "Ar-Ra'd",
+    "ayet_sayisi": 43
+  },
+  {
+    "no": 14,
+    "ad": "سُورَةُ إِبۡرَاهِيمَ",
+    "ad_tr": "Ibrahim",
+    "ayet_sayisi": 52
+  },
+  {
+    "no": 15,
+    "ad": "سُورَةُ الحِجۡرِ",
+    "ad_tr": "Al-Hijr",
+    "ayet_sayisi": 99
+  },
+  {
+    "no": 16,
+    "ad": "سُورَةُ النَّحۡلِ",
+    "ad_tr": "An-Nahl",
+    "ayet_sayisi": 128
+  },
+  {
+    "no": 17,
+    "ad": "سُورَةُ الإِسۡرَاءِ",
+    "ad_tr": "Al-Israa",
+    "ayet_sayisi": 111
+  },
+  {
+    "no": 18,
+    "ad": "سُورَةُ الكَهۡفِ",
+    "ad_tr": "Al-Kahf",
+    "ayet_sayisi": 110
+  },
+  {
+    "no": 19,
+    "ad": "سُورَةُ مَرۡيَمَ",
+    "ad_tr": "Maryam",
+    "ayet_sayisi": 98
+  },
+  {
+    "no": 20,
+    "ad": "سُورَةُ طه",
+    "ad_tr": "Taa-Haa",
+    "ayet_sayisi": 135
+  },
+  {
+    "no": 21,
+    "ad": "سُورَةُ الأَنبِيَاءِ",
+    "ad_tr": "Al-Anbiyaa",
+    "ayet_sayisi": 112
+  },
+  {
+    "no": 22,
+    "ad": "سُورَةُ الحَجِّ",
+    "ad_tr": "Al-Hajj",
+    "ayet_sayisi": 78
+  },
+  {
+    "no": 23,
+    "ad": "سُورَةُ المُؤۡمِنُونَ",
+    "ad_tr": "Al-Muminoon",
+    "ayet_sayisi": 118
+  },
+  {
+    "no": 24,
+    "ad": "سُورَةُ النُّورِ",
+    "ad_tr": "An-Noor",
+    "ayet_sayisi": 64
+  },
+  {
+    "no": 25,
+    "ad": "سُورَةُ الفُرۡقَانِ",
+    "ad_tr": "Al-Furqaan",
+    "ayet_sayisi": 77
+  },
+  {
+    "no": 26,
+    "ad": "سُورَةُ الشُّعَرَاءِ",
+    "ad_tr": "Ash-Shu'araa",
+    "ayet_sayisi": 227
+  },
+  {
+    "no": 27,
+    "ad": "سُورَةُ النَّمۡلِ",
+    "ad_tr": "An-Naml",
+    "ayet_sayisi": 93
+  },
+  {
+    "no": 28,
+    "ad": "سُورَةُ القَصَصِ",
+    "ad_tr": "Al-Qasas",
+    "ayet_sayisi": 88
+  },
+  {
+    "no": 29,
+    "ad": "سُورَةُ العَنكَبُوتِ",
+    "ad_tr": "Al-Ankaboot",
+    "ayet_sayisi": 69
+  },
+  {
+    "no": 30,
+    "ad": "سُورَةُ الرُّومِ",
+    "ad_tr": "Ar-Room",
+    "ayet_sayisi": 60
+  },
+  {
+    "no": 31,
+    "ad": "سُورَةُ لُقۡمَانَ",
+    "ad_tr": "Luqman",
+    "ayet_sayisi": 34
+  },
+  {
+    "no": 32,
+    "ad": "سُورَةُ السَّجۡدَةِ",
+    "ad_tr": "As-Sajda",
+    "ayet_sayisi": 30
+  },
+  {
+    "no": 33,
+    "ad": "سُورَةُ الأَحۡزَابِ",
+    "ad_tr": "Al-Ahzaab",
+    "ayet_sayisi": 73
+  },
+  {
+    "no": 34,
+    "ad": "سُورَةُ سَبَإٍ",
+    "ad_tr": "Saba",
+    "ayet_sayisi": 54
+  },
+  {
+    "no": 35,
+    "ad": "سُورَةُ فَاطِرٍ",
+    "ad_tr": "Faatir",
+    "ayet_sayisi": 45
+  },
+  {
+    "no": 36,
+    "ad": "سُورَةُ يسٓ",
+    "ad_tr": "Yaseen",
+    "ayet_sayisi": 83
+  },
+  {
+    "no": 37,
+    "ad": "سُورَةُ الصَّافَّاتِ",
+    "ad_tr": "As-Saaffaat",
+    "ayet_sayisi": 182
+  },
+  {
+    "no": 38,
+    "ad": "سُورَةُ صٓ",
+    "ad_tr": "Saad",
+    "ayet_sayisi": 88
+  },
+  {
+    "no": 39,
+    "ad": "سُورَةُ الزُّمَرِ",
+    "ad_tr": "Az-Zumar",
+    "ayet_sayisi": 75
+  },
+  {
+    "no": 40,
+    "ad": "سُورَةُ غَافِرٍ",
+    "ad_tr": "Ghafir",
+    "ayet_sayisi": 85
+  },
+  {
+    "no": 41,
+    "ad": "سُورَةُ فُصِّلَتۡ",
+    "ad_tr": "Fussilat",
+    "ayet_sayisi": 54
+  },
+  {
+    "no": 42,
+    "ad": "سُورَةُ الشُّورَىٰ",
+    "ad_tr": "Ash-Shura",
+    "ayet_sayisi": 53
+  },
+  {
+    "no": 43,
+    "ad": "سُورَةُ الزُّخۡرُفِ",
+    "ad_tr": "Az-Zukhruf",
+    "ayet_sayisi": 89
+  },
+  {
+    "no": 44,
+    "ad": "سُورَةُ الدُّخَانِ",
+    "ad_tr": "Ad-Dukhaan",
+    "ayet_sayisi": 59
+  },
+  {
+    "no": 45,
+    "ad": "سُورَةُ الجَاثِيَةِ",
+    "ad_tr": "Al-Jaathiya",
+    "ayet_sayisi": 37
+  },
+  {
+    "no": 46,
+    "ad": "سُورَةُ الأَحۡقَافِ",
+    "ad_tr": "Al-Ahqaf",
+    "ayet_sayisi": 35
+  },
+  {
+    "no": 47,
+    "ad": "سُورَةُ مُحَمَّدٍ",
+    "ad_tr": "Muhammad",
+    "ayet_sayisi": 38
+  },
+  {
+    "no": 48,
+    "ad": "سُورَةُ الفَتۡحِ",
+    "ad_tr": "Al-Fath",
+    "ayet_sayisi": 29
+  },
+  {
+    "no": 49,
+    "ad": "سُورَةُ الحُجُرَاتِ",
+    "ad_tr": "Al-Hujuraat",
+    "ayet_sayisi": 18
+  },
+  {
+    "no": 50,
+    "ad": "سُورَةُ قٓ",
+    "ad_tr": "Qaaf",
+    "ayet_sayisi": 45
+  },
+  {
+    "no": 51,
+    "ad": "سُورَةُ الذَّارِيَاتِ",
+    "ad_tr": "Adh-Dhaariyat",
+    "ayet_sayisi": 60
+  },
+  {
+    "no": 52,
+    "ad": "سُورَةُ الطُّورِ",
+    "ad_tr": "At-Tur",
+    "ayet_sayisi": 49
+  },
+  {
+    "no": 53,
+    "ad": "سُورَةُ النَّجۡمِ",
+    "ad_tr": "An-Najm",
+    "ayet_sayisi": 62
+  },
+  {
+    "no": 54,
+    "ad": "سُورَةُ القَمَرِ",
+    "ad_tr": "Al-Qamar",
+    "ayet_sayisi": 55
+  },
+  {
+    "no": 55,
+    "ad": "سُورَةُ الرَّحۡمَٰن",
+    "ad_tr": "Ar-Rahmaan",
+    "ayet_sayisi": 78
+  },
+  {
+    "no": 56,
+    "ad": "سُورَةُ الوَاقِعَةِ",
+    "ad_tr": "Al-Waaqia",
+    "ayet_sayisi": 96
+  },
+  {
+    "no": 57,
+    "ad": "سُورَةُ الحَدِيدِ",
+    "ad_tr": "Al-Hadid",
+    "ayet_sayisi": 29
+  },
+  {
+    "no": 58,
+    "ad": "سُورَةُ المُجَادلَةِ",
+    "ad_tr": "Al-Mujaadila",
+    "ayet_sayisi": 22
+  },
+  {
+    "no": 59,
+    "ad": "سُورَةُ الحَشۡرِ",
+    "ad_tr": "Al-Hashr",
+    "ayet_sayisi": 24
+  },
+  {
+    "no": 60,
+    "ad": "سُورَةُ المُمۡتَحنَةِ",
+    "ad_tr": "Al-Mumtahana",
+    "ayet_sayisi": 13
+  },
+  {
+    "no": 61,
+    "ad": "سُورَةُ الصَّفِّ",
+    "ad_tr": "As-Saff",
+    "ayet_sayisi": 14
+  },
+  {
+    "no": 62,
+    "ad": "سُورَةُ الجُمُعَةِ",
+    "ad_tr": "Al-Jumu'a",
+    "ayet_sayisi": 11
+  },
+  {
+    "no": 63,
+    "ad": "سُورَةُ المُنَافِقُونَ",
+    "ad_tr": "Al-Munaafiqoon",
+    "ayet_sayisi": 11
+  },
+  {
+    "no": 64,
+    "ad": "سُورَةُ التَّغَابُنِ",
+    "ad_tr": "At-Taghaabun",
+    "ayet_sayisi": 18
+  },
+  {
+    "no": 65,
+    "ad": "سُورَةُ الطَّلَاقِ",
+    "ad_tr": "At-Talaaq",
+    "ayet_sayisi": 12
+  },
+  {
+    "no": 66,
+    "ad": "سُورَةُ التَّحۡرِيمِ",
+    "ad_tr": "At-Tahrim",
+    "ayet_sayisi": 12
+  },
+  {
+    "no": 67,
+    "ad": "سُورَةُ المُلۡكِ",
+    "ad_tr": "Al-Mulk",
+    "ayet_sayisi": 30
+  },
+  {
+    "no": 68,
+    "ad": "سُورَةُ القَلَمِ",
+    "ad_tr": "Al-Qalam",
+    "ayet_sayisi": 52
+  },
+  {
+    "no": 69,
+    "ad": "سُورَةُ الحَاقَّةِ",
+    "ad_tr": "Al-Haaqqa",
+    "ayet_sayisi": 52
+  },
+  {
+    "no": 70,
+    "ad": "سُورَةُ المَعَارِجِ",
+    "ad_tr": "Al-Ma'aarij",
+    "ayet_sayisi": 44
+  },
+  {
+    "no": 71,
+    "ad": "سُورَةُ نُوحٍ",
+    "ad_tr": "Nooh",
+    "ayet_sayisi": 28
+  },
+  {
+    "no": 72,
+    "ad": "سُورَةُ الجِنِّ",
+    "ad_tr": "Al-Jinn",
+    "ayet_sayisi": 28
+  },
+  {
+    "no": 73,
+    "ad": "سُورَةُ المُزَّمِّلِ",
+    "ad_tr": "Al-Muzzammil",
+    "ayet_sayisi": 20
+  },
+  {
+    "no": 74,
+    "ad": "سُورَةُ المُدَّثِّرِ",
+    "ad_tr": "Al-Muddaththir",
+    "ayet_sayisi": 56
+  },
+  {
+    "no": 75,
+    "ad": "سُورَةُ القِيَامَةِ",
+    "ad_tr": "Al-Qiyaama",
+    "ayet_sayisi": 40
+  },
+  {
+    "no": 76,
+    "ad": "سُورَةُ الإِنسَانِ",
+    "ad_tr": "Al-Insaan",
+    "ayet_sayisi": 31
+  },
+  {
+    "no": 77,
+    "ad": "سُورَةُ المُرۡسَلَاتِ",
+    "ad_tr": "Al-Mursalaat",
+    "ayet_sayisi": 50
+  },
+  {
+    "no": 78,
+    "ad": "سُورَةُ النَّبَإِ",
+    "ad_tr": "An-Naba",
+    "ayet_sayisi": 40
+  },
+  {
+    "no": 79,
+    "ad": "سُورَةُ النَّازِعَاتِ",
+    "ad_tr": "An-Naazi'aat",
+    "ayet_sayisi": 46
+  },
+  {
+    "no": 80,
+    "ad": "سُورَةُ عَبَسَ",
+    "ad_tr": "Abasa",
+    "ayet_sayisi": 42
+  },
+  {
+    "no": 81,
+    "ad": "سُورَةُ التَّكۡوِيرِ",
+    "ad_tr": "At-Takwir",
+    "ayet_sayisi": 29
+  },
+  {
+    "no": 82,
+    "ad": "سُورَةُ الانفِطَارِ",
+    "ad_tr": "Al-Infitaar",
+    "ayet_sayisi": 19
+  },
+  {
+    "no": 83,
+    "ad": "سُورَةُ المُطَفِّفِينَ",
+    "ad_tr": "Al-Mutaffifin",
+    "ayet_sayisi": 36
+  },
+  {
+    "no": 84,
+    "ad": "سُورَةُ الانشِقَاقِ",
+    "ad_tr": "Al-Inshiqaaq",
+    "ayet_sayisi": 25
+  },
+  {
+    "no": 85,
+    "ad": "سُورَةُ البُرُوجِ",
+    "ad_tr": "Al-Burooj",
+    "ayet_sayisi": 22
+  },
+  {
+    "no": 86,
+    "ad": "سُورَةُ الطَّارِقِ",
+    "ad_tr": "At-Taariq",
+    "ayet_sayisi": 17
+  },
+  {
+    "no": 87,
+    "ad": "سُورَةُ الأَعۡلَىٰ",
+    "ad_tr": "Al-A'laa",
+    "ayet_sayisi": 19
+  },
+  {
+    "no": 88,
+    "ad": "سُورَةُ الغَاشِيَةِ",
+    "ad_tr": "Al-Ghaashiya",
+    "ayet_sayisi": 26
+  },
+  {
+    "no": 89,
+    "ad": "سُورَةُ الفَجۡرِ",
+    "ad_tr": "Al-Fajr",
+    "ayet_sayisi": 30
+  },
+  {
+    "no": 90,
+    "ad": "سُورَةُ البَلَدِ",
+    "ad_tr": "Al-Balad",
+    "ayet_sayisi": 20
+  },
+  {
+    "no": 91,
+    "ad": "سُورَةُ الشَّمۡسِ",
+    "ad_tr": "Ash-Shams",
+    "ayet_sayisi": 15
+  },
+  {
+    "no": 92,
+    "ad": "سُورَةُ اللَّيۡلِ",
+    "ad_tr": "Al-Lail",
+    "ayet_sayisi": 21
+  },
+  {
+    "no": 93,
+    "ad": "سُورَةُ الضُّحَىٰ",
+    "ad_tr": "Ad-Dhuhaa",
+    "ayet_sayisi": 11
+  },
+  {
+    "no": 94,
+    "ad": "سُورَةُ الشَّرۡحِ",
+    "ad_tr": "Ash-Sharh",
+    "ayet_sayisi": 8
+  },
+  {
+    "no": 95,
+    "ad": "سُورَةُ التِّينِ",
+    "ad_tr": "At-Tin",
+    "ayet_sayisi": 8
+  },
+  {
+    "no": 96,
+    "ad": "سُورَةُ العَلَقِ",
+    "ad_tr": "Al-Alaq",
+    "ayet_sayisi": 19
+  },
+  {
+    "no": 97,
+    "ad": "سُورَةُ القَدۡرِ",
+    "ad_tr": "Al-Qadr",
+    "ayet_sayisi": 5
+  },
+  {
+    "no": 98,
+    "ad": "سُورَةُ البَيِّنَةِ",
+    "ad_tr": "Al-Bayyina",
+    "ayet_sayisi": 8
+  },
+  {
+    "no": 99,
+    "ad": "سُورَةُ الزَّلۡزَلَةِ",
+    "ad_tr": "Az-Zalzala",
+    "ayet_sayisi": 8
+  },
+  {
+    "no": 100,
+    "ad": "سُورَةُ العَادِيَاتِ",
+    "ad_tr": "Al-Aadiyaat",
+    "ayet_sayisi": 11
+  },
+  {
+    "no": 101,
+    "ad": "سُورَةُ القَارِعَةِ",
+    "ad_tr": "Al-Qaari'a",
+    "ayet_sayisi": 11
+  },
+  {
+    "no": 102,
+    "ad": "سُورَةُ التَّكَاثُرِ",
+    "ad_tr": "At-Takaathur",
+    "ayet_sayisi": 8
+  },
+  {
+    "no": 103,
+    "ad": "سُورَةُ العَصۡرِ",
+    "ad_tr": "Al-Asr",
+    "ayet_sayisi": 3
+  },
+  {
+    "no": 104,
+    "ad": "سُورَةُ الهُمَزَةِ",
+    "ad_tr": "Al-Humaza",
+    "ayet_sayisi": 9
+  },
+  {
+    "no": 105,
+    "ad": "سُورَةُ الفِيلِ",
+    "ad_tr": "Al-Fil",
+    "ayet_sayisi": 5
+  },
+  {
+    "no": 106,
+    "ad": "سُورَةُ قُرَيۡشٍ",
+    "ad_tr": "Quraish",
+    "ayet_sayisi": 4
+  },
+  {
+    "no": 107,
+    "ad": "سُورَةُ المَاعُونِ",
+    "ad_tr": "Al-Maa'un",
+    "ayet_sayisi": 7
+  },
+  {
+    "no": 108,
+    "ad": "سُورَةُ الكَوۡثَرِ",
+    "ad_tr": "Al-Kawthar",
+    "ayet_sayisi": 3
+  },
+  {
+    "no": 109,
+    "ad": "سُورَةُ الكَافِرُونَ",
+    "ad_tr": "Al-Kaafiroon",
+    "ayet_sayisi": 6
+  },
+  {
+    "no": 110,
+    "ad": "سُورَةُ النَّصۡرِ",
+    "ad_tr": "An-Nasr",
+    "ayet_sayisi": 3
+  },
+  {
+    "no": 111,
+    "ad": "سُورَةُ المَسَدِ",
+    "ad_tr": "Al-Masad",
+    "ayet_sayisi": 5
+  },
+  {
+    "no": 112,
+    "ad": "سُورَةُ الإِخۡلَاصِ",
+    "ad_tr": "Al-Ikhlaas",
+    "ayet_sayisi": 4
+  },
+  {
+    "no": 113,
+    "ad": "سُورَةُ الفَلَقِ",
+    "ad_tr": "Al-Falaq",
+    "ayet_sayisi": 5
+  },
+  {
+    "no": 114,
+    "ad": "سُورَةُ النَّاسِ",
+    "ad_tr": "An-Naas",
+    "ayet_sayisi": 6
+  }
+]

@@ -1,0 +1,15 @@
+# Gizli dosyalar - ASLA paylasilmamali
+.env
+data/client_secret.json
+data/youtube_token.json
+
+# Uretilen icerik
+output/
+assets/sfx/
+
+# NOT: assets/arkaplan/ ve assets/music/ depoya DAHIL edilir.
+# GitHub Actions'ta arka plan videosuna ve muzige erisim gerekiyor.
+
+# Python
+__pycache__/
+*.pyc

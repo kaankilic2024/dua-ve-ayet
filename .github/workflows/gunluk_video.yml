@@ -1,0 +1,133 @@
+name: Dua Ve Ayet - Günlük Video
+
+on:
+  # Her gün Türkiye saatiyle 06:00 (UTC 03:00)
+  # Not: diğer kanallardan farklı saat (çocuk 08:00, tarih 11:00)
+  schedule:
+    - cron: "0 3 * * *"
+
+  # Elle de çalıştırabilirsin (Actions sekmesi > Run workflow)
+  workflow_dispatch:
+    inputs:
+      adet:
+        description: "Kaç video üretilsin?"
+        required: true
+        default: "3"
+        type: choice
+        options:
+          - "1"
+          - "2"
+          - "3"
+          - "5"
+      yukle:
+        description: "YouTube'a yüklensin mi?"
+        required: true
+        default: true
+        type: boolean
+
+# Aynı anda iki üretim çalışmasın (kota ve tekrar sorunu olmasın)
+concurrency:
+  group: video-uretimi
+  cancel-in-progress: false
+
+jobs:
+  uret:
+    runs-on: ubuntu-latest
+    timeout-minutes: 330
+
+    permissions:
+      contents: write        # fikir geçmişini geri yazabilmek için
+
+    steps:
+      - name: Depoyu al
+        uses: actions/checkout@v4
+
+      - name: Python kur
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Sistem araçlarını kur
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg fonts-dejavu-core fonts-liberation \
+            fonts-hosny-amiri fonts-kacst-one
+          fc-list | grep -ci arabic || echo 'UYARI: Arapca yazi tipi bulunamadi'
+          ffmpeg -version | head -1
+
+      - name: Python paketlerini kur
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Gizli bilgileri dosyaya yaz
+        env:
+          TOKEN_JSON: ${{ secrets.YOUTUBE_TOKEN_JSON }}
+          CLIENT_JSON: ${{ secrets.YOUTUBE_CLIENT_SECRET_JSON }}
+        run: |
+          mkdir -p data
+          if [ -n "$TOKEN_JSON" ]; then
+            printf '%s' "$TOKEN_JSON" > data/youtube_token.json
+            echo "YouTube izni hazır."
+          else
+            echo "UYARI: YOUTUBE_TOKEN_JSON tanımlı değil, yükleme yapılamaz."
+          fi
+          if [ -n "$CLIENT_JSON" ]; then
+            printf '%s' "$CLIENT_JSON" > data/client_secret.json
+          fi
+
+      - name: Videoları üret
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_MODEL: ${{ vars.GEMINI_MODEL || 'gemini-3.6-flash' }}
+          SES_TONU: ${{ vars.SES_TONU || 'sakin' }}
+          SES_MOTORU: ${{ vars.SES_MOTORU || 'gemini' }}
+          GEMINI_SESI: ${{ vars.GEMINI_SESI || 'Charon' }}
+          SES_ARASI_BEKLEME: ${{ vars.SES_ARASI_BEKLEME || '4' }}
+          YOUTUBE_GIZLILIK: ${{ vars.YOUTUBE_GIZLILIK || 'public' }}
+          ARAPCA_YAZI_TIPI: "Amiri"
+          TURKCE_YAZI_TIPI: "DejaVu Sans"
+        run: |
+          YUKLE="${{ github.event.inputs.yukle || 'true' }}"
+          ADET="${{ github.event.inputs.adet || '3' }}"
+
+          BAYRAK=""
+          if [ "$YUKLE" = "true" ]; then
+            BAYRAK="--yukle-otomatik"
+          fi
+
+          python main.py --adet "$ADET" $BAYRAK
+
+      - name: Ayet ilerlemesini kaydet
+        if: always()
+        run: |
+          if git diff --quiet data/ 2>/dev/null; then
+            echo "İlerlemede değişiklik yok."
+          else
+            git config user.name "video-otomasyonu"
+            git config user.email "actions@github.com"
+            git add data/ayet_ilerleme.json data/sure_bilgisi.json
+            git commit -m "Ayet ilerlemesi güncellendi [skip ci]"
+            git push
+          fi
+
+      - name: Senaryoları sakla
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: ozetler-${{ github.run_number }}
+          path: |
+            output/*/ozet.txt
+            output/*/veri.json
+          retention-days: 14
+          if-no-files-found: ignore
+
+      - name: Videoları sakla
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: videolar-${{ github.run_number }}
+          path: output/*/video.mp4
+          retention-days: 5
+          if-no-files-found: ignore
